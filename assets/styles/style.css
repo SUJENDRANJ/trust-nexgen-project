@@ -76,6 +76,9 @@ css table of contents
 13. error_page 
 
 
+
+
+
 ----------------------------------------------------------------*/
 /*------------------------------------------------------------------
 1. General
@@ -91,6 +94,16 @@ html {
 
 :root {
   scroll-behavior: unset;
+}
+
+.mobile-only-space {
+  display: none;
+}
+
+@media (max-width: 760px) {
+  .mobile-only-space {
+    display: block;
+  }
 }
 
 body {
